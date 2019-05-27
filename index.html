@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crud Using Javascript</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td class="fixed">
+          <form autocomplete="off" onsubmit="event.preventDefault();FormSubmit();">
+            <div>
+              <label>Full Name *</label>
+              <input type="text" name="fullname" id="fullname">
+              <label class="validation-error hide" id="fullnameValidation">Full Name is Required.<br><br></label>
+            </div>
+            <div>
+              <label>Employee Code</label>
+              <input type="text" name="emp_code" id="emp_code">
+            </div>
+            <div>
+              <label>Salary</label>
+              <input type="text" name="salary" id="salary">
+            </div>
+            <div>
+              <label>City</label>
+              <input type="text" name="city" id="city">
+            </div>
+            <div class="form-action-buttons">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </td>
+        <td>
+          <table class="list" id="employee_list">
+            <thead>
+              <tr>
+                <th>Full Name</th>
+                <th>Employee Code</th>
+                <th>Salary</th>
+                <th>City</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
