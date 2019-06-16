@@ -32,17 +32,18 @@
           </form>
         </td>
         <td>
-          <table class="list" id="employee_list">
+          <input id="searchInput" type="text" placeholder="Search.." onkeydown="searchFromTable(event)">
+          <table class="list" id="employeeList">
             <thead>
               <tr>
-                <th>Full Name</th>
-                <th>Employee Code</th>
-                <th>Salary</th>
-                <th>City</th>
+                <th id='sortByFullName' onclick="sortingTable(event)">Full Name</th>
+                <th id='sortByEmpCode' onclick="sortingTable(event)">Employee Code</th>
+                <th id='sortBySalary' onclick="sortingTable(event)">Salary</th>
+                <th id='sortByCity' onclick="sortingTable(event)">City</th>
                 <th>Actions</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id='employeeListBody'>
 
             </tbody>
           </table>
